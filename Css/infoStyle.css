@@ -1,0 +1,36 @@
+body {
+    background-color: lightslategray;
+}
+
+#container {
+    border: 3px solid;
+    border-image: linear-gradient(to bottom, turquoise, greenyellow) 0 1;
+    display: block;
+}
+
+span {
+    color: rgb(245, 245, 245);
+}
+
+p {
+    width: 30%;
+}
+
+del {
+    text-decoration-color: red;
+}
+
+ins {
+    text-decoration: none;
+    font-family: 'Caveat', cursive;
+    font-size: 1.5em;
+    color: red;
+    position: absolute;
+    transform: rotate(-10deg);
+    margin-left: -20px;
+    margin-top: -40px;
+}
+
+#list ul {
+    font-size: 28px;
+}
