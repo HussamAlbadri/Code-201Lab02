@@ -1,6 +1,5 @@
 'use strict'
 let counter = 0;
-
 let name = prompt("What is your name ?")
 
 alert("Welcome to my protofilo...  " + name);
@@ -63,8 +62,53 @@ switch (thirdQuestion) {
         alert("Try later...GG")
         console.log('Try later...GG');
         break;
-    default:
-        alert("Hi there");
+}
+
+
+//Question 6
+for (let i = 0; i < 4; i++) {
+
+    let number = prompt('Guess my favorite number  ' + name);
+    if (number > 33) {
+        alert('You guessed too high! Guess again  ' + name);
+
+    } else if (number < 33) {
+        alert('You guessed too low! Guess again  ' + name);
+    } else if (number == 33) {
+        alert('That is correct ' + name + ' My favorite number is 33!');
+        counter++;
+        break;
+    }
+
 
 }
+
+
+
+// Question 7
+let userPc = ['dell', 'mac', 'acer', 'lenovo']
+let userInput = prompt('Put your favourite pc brand...')
+
+userInput = userInput.toLowerCase();
+
+let flagBreak = true;
+for (let i = 0; i < 6; i++) {
+
+    for (let j = 0; j < userPc.length; j++) {
+        if (userInput === userPc[j]) {
+            alert('Right choice')
+            console.log('Right choice');
+            flagBreak = !true;
+            counter++;
+        }
+    }
+    if (flagBreak == false) {
+        break;
+    } else {
+        userInput = prompt('Put your favourite pc brand...')
+    }
+}
+alert("The pc's brands is... " + userPc)
+
+
 alert("You have " + counter + "  right answers")
