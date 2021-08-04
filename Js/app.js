@@ -4,6 +4,8 @@ let name = prompt("What is your name ?")
 
 alert("Welcome to my protofilo...  " + name);
 alert("Hint for you: My birthday is near the end of the year (:")
+
+// Question 1
 let firstQuestion = prompt("Do you think that my birth date in December ?")
 
 if (firstQuestion != null) {
@@ -23,7 +25,7 @@ switch (firstQuestion) {
         console.log('Wrong answer');
         break;
 }
-
+// Question 2
 let secondQuestion = prompt("Do you that my favourite hobby is Football ?")
 
 if (secondQuestion != null) {
@@ -43,7 +45,7 @@ switch (secondQuestion) {
         counter++;
         break;
 }
-
+// Question 3
 let thirdQuestion = prompt("Is Black consedierd as my favourite color ?")
 
 if (thirdQuestion != null) {
@@ -64,6 +66,60 @@ switch (thirdQuestion) {
         break;
 }
 
+// Ouestion 4
+let fourthQuestion = prompt("Is Winter is my favourite season ?")
+if (fourthQuestion != null) {
+    fourthQuestion = fourthQuestion.toLowerCase();
+}
+
+switch (fourthQuestion) {
+    case 'yes':
+    case 'y':
+        alert("Right Answer")
+        console.log("Right Answer");
+        break;
+        counter++;
+
+    case 'no':
+    case 'n':
+        alert("Bad Answer")
+        console.log("Bad Answer");
+        break;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//Question 5
+let favCar = ['mercedes', 'lexus', '1967 mustang', 'kia', ]
+let fifthQuestion = prompt("Guess my favourite car.. \nPick one of these brands : (Mercedes , BMW , Ferrari , Toyota , Lexus , Kia , Mitsubishi , Pegouet , 1967 Mustang")
+
+fifthQuestion = fifthQuestion.toLowerCase();
+
+let flag = true;
+for (let i = 0; i < 4; i++) {
+    for (let h = 0; h < favCar.length; h++) {
+        if (fifthQuestion === favCar[h]) {
+            alert("Good Answer")
+            console.log('Good Answer')
+            flag = !true;
+            counter++;
+        }
+    }
+    if (flag == false) {
+        break;
+    } else {
+        fifthQuestion = prompt("Guess my favourite car.. ")
+    }
+}
 
 //Question 6
 for (let i = 0; i < 4; i++) {
@@ -111,4 +167,4 @@ for (let i = 0; i < 6; i++) {
 alert("The pc's brands is... " + userPc)
 
 
-alert("You have " + counter + "  right answers")
+alert("You have " + counter + "  right answers out of 7")
