@@ -125,13 +125,13 @@ for (let i = 0; i < 4; i++) {
         counter++;
         break;
     }
-
-
 }
+alert("Yor ran out of guesses, the right answer is (33)")
 
 
 
-// Question 7
+
+Question 7
 let userPc = ['dell', 'mac', 'acer', 'lenovo']
 let userInput = prompt('Put your favourite pc brand...')
 
