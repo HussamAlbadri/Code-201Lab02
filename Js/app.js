@@ -88,16 +88,6 @@ switch (fourthQuestion) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 //Question 5
 let favCar = ['mercedes', 'lexus', '1967 mustang', 'kia', ]
 let fifthQuestion = prompt("Guess my favourite car.. \nPick one of these brands : (Mercedes , BMW , Ferrari , Toyota , Lexus , Kia , Mitsubishi , Pegouet , 1967 Mustang")
@@ -167,4 +157,4 @@ for (let i = 0; i < 6; i++) {
 alert("The pc's brands is... " + userPc)
 
 
-alert("You have " + counter + "  right answers out of 7")
+alert(name + " have " + counter + "  right answers out of 7")
